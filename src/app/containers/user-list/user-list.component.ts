@@ -8,6 +8,7 @@ import {UserService} from '../../rest/user/user.service';
 })
 export class UserListComponent implements OnInit {
   public users;
+  public idUser;
 
   constructor(private userService: UserService) {
   }
