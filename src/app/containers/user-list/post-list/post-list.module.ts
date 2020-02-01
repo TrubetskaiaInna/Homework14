@@ -1,5 +1,5 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 import {PostListComponent} from './post-list.component';
 import {PostModule} from './post/post.module';
 
@@ -13,4 +13,5 @@ import {PostModule} from './post/post.module';
     PostListComponent
   ]
 })
-export class PostListModule { }
+export class PostListModule {
+}

@@ -9,7 +9,7 @@ export class UserService {
   constructor(private myHttp: HttpClient) {
   }
 
-  public get(): any {
+  public getUser(): any {
     return this.myHttp.get('https://jsonplaceholder.typicode.com/users');
   }
 }

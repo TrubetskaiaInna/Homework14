@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input, OnChanges} from '@angular/core';
 import {PostService} from '../../../rest/post/post.service';
 
 @Component({
@@ -6,14 +6,17 @@ import {PostService} from '../../../rest/post/post.service';
   templateUrl: './post-list.html',
   styleUrls: ['./post-list.scss']
 })
-export class PostListComponent implements OnInit {
+export class PostListComponent implements OnChanges {
   public posts;
   @Input() idUser;
 
   constructor(private postService: PostService) {
   }
 
-  ngOnInit() {
-    this.postService.get(1).subscribe(posts => this.posts = posts);
+  ngOnChanges() {
+    this.postService.getPost(this.idUser).subscribe(
+      posts => this.posts = posts,
+      err => console.log('error', err.status),
+      () => console.log('request completed'));
   }
 }

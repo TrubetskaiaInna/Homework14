@@ -1,5 +1,5 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 import {PostComponent} from './post.component';
 
 @NgModule({
@@ -11,4 +11,5 @@ import {PostComponent} from './post.component';
     PostComponent
   ]
 })
-export class PostModule { }
+export class PostModule {
+}

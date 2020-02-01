@@ -9,7 +9,7 @@ export class PostService {
   constructor(private myHttp: HttpClient) {
   }
 
-  public get(id): any {
+  public getPost(id) {
     return this.myHttp.get(`https://jsonplaceholder.typicode.com/posts?userId=${id}`);
   }
 }

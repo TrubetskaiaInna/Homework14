@@ -6,9 +6,10 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class PostComponent implements OnInit {
   @Input() post;
-  constructor() { }
+
+  constructor() {
+  }
 
   ngOnInit() {
   }
-
 }
