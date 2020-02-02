@@ -15,7 +15,7 @@ export class UserComponent implements OnInit {
   ngOnInit() {
   }
 
-  getSingleUserId() {
+  getSingleUserId(): void {
     this.getingSingleUserId.emit();
   }
 }

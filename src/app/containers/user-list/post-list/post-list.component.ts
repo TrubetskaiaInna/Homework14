@@ -14,7 +14,7 @@ export class PostListComponent implements OnChanges {
   constructor(private postService: PostService) {
   }
 
-  ngOnChanges() {
+  ngOnChanges(): void {
     this.postService.getPost(this.idUser).subscribe(
       (posts: Post[]) => {
         this.posts = posts;
