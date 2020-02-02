@@ -1,4 +1,5 @@
 import {Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
+import {User} from '../../../rest/user/user.dto';
 
 @Component({
   selector: 'app-user',
@@ -6,7 +7,7 @@ import {Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 })
 export class UserComponent implements OnInit {
   @Input() user;
-  @Output() getingSingleUserId: EventEmitter<any> = new EventEmitter<any>();
+  @Output() getingSingleUserId: EventEmitter<User> = new EventEmitter<User>();
 
   constructor() {
   }
