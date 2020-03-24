@@ -16,6 +16,6 @@ export class UserComponent implements OnInit {
   }
 
   getSingleUserId(): void {
-    this.getingSingleUserId.emit();
+    this.getingSingleUserId.emit(this.user);
   }
 }
